@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.castillo.HolyBibleApp</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+
+  <name>Holy Bible App</name>
+  <summary>Complete Bible study and devotional system for Linux</summary>
+
+  <description>
+    <p>
+      Holy Bible App is a complete Bible study and devotional platform built for Linux users. Study Scripture, take notes, track spiritual growth, and stay consistent—all in one offline application.
+    </p>
+    <p>
+      Features include multiple Bible translations (KJV, KJV with Strong’s, WEB, RV1909), Strong’s Concordance, Treasury of Scripture Knowledge (TSK), verse notes, bookmarks, double highlighting, topical study system, prayer journal, notebook, reading plans, memorization flashcards, and full Bible text-to-speech.
+    </p>
+    <p>
+      Fully offline. No tracking. No accounts required.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.castillo.HolyBibleApp.desktop</launchable>
+
+  <categories>
+    <category>Education</category>
+  </categories>
+
+  <developer_name>Castillo</developer_name>
+
+  <releases>
+    <release version="1.0.0" date="2026-04-05"/>
+  </releases>
+
+  <url type="homepage">https://github.com/castillo312-design/HolyText-Linux</url>
+
+</component>
