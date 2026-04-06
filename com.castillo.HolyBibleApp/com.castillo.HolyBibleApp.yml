@@ -26,3 +26,4 @@ modules:
       - type: file
         url: https://github.com/castillo312-design/HolyText-Linux/releases/download/V1.0.0/HolyBible-1.0.0.AppImage
         sha256: 23f4d9177c635c4e7ccc85d5e57be7489a78c812cdf0eeda27890a28b1c5a4bb
+
