@@ -1,0 +1,28 @@
+app-id: com.castillo.HolyBibleApp
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: holy-bible-app
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=home
+  - --talk-name=org.freedesktop.SpeechDispatcher
+
+modules:
+  - name: holy-bible-app
+    buildsystem: simple
+    build-commands:
+      - install -D HolyBible.AppImage /app/HolyBible.AppImage
+      - chmod +x /app/HolyBible.AppImage
+      - ln -s /app/HolyBible.AppImage /app/bin/holy-bible-app
+      - install -D com.castillo.HolyBibleApp.metainfo.xml /app/share/metainfo/com.castillo.HolyBibleApp.metainfo.xml
+
+    sources:
+      - type: file
+        url: https://github.com/castillo312-design/HolyText-Linux/releases/download/V1.0.0/HolyBible-1.0.0.AppImage
+        sha256: 23f4d9177c635c4e7ccc85d5e57be7489a78c812cdf0eeda27890a28b1c5a4bb
